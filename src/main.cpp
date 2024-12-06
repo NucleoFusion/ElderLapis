@@ -1,14 +1,7 @@
-#include "raylib.h"
-#include <iostream>
+#include "../classes/window/window.h"
 
 int main() {
-  std ::cout << "Hello World" << std ::endl;
+  window *win = new window();
 
-  InitWindow(400, 400, "LapisElder");
-  SetTargetFPS(60);
-
-  while (!WindowShouldClose()) {
-  }
-  CloseWindow();
-  return 0;
+  win->Init();
 }
